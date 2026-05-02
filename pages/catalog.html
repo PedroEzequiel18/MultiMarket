@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="../src/css/catalog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="header-catalog">
+      <section class="logo-icon">
+        <img src="../src/assets/icon/logo-icon.svg" alt="Logo da empresa" />
+      </section>
+      <section>
+        <form class="form-container">
+          <a href="https://github.com/gabrielalves12y-art" class="profile-icon">
+            <img
+              src="../src/assets/icon/profile-icon.svg"
+              alt="Perfil do Usuário"
+            />
+          </a>
+          <a href="https://www.pichau.com.br/cart" class="cart-icon">
+            <img
+              src="../src/assets/icon/cart-icon.svg"
+              alt="Carrinho de compras"
+            />
+          </a>
+        </form>
+        <form class="search-container" id="search-form" action="#" method="get">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar"
+            name="q"
+            required
+          />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </section>
+    </div>
+
+    <button id="openBtn" class="btn-primary">
+      <i class="fas fa-sliders-h"></i> FILTRAR PRODUTOS
+    </button>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="filterMenu" class="filter-side-menu">
+      <div class="menu-header">
+        <h2>Filtros</h2>
+        <button id="closeBtn">&times;</button>
+      </div>
+
+      <div class="menu-content">
+        <div class="filter-group">
+          <label class="filter-label">Categoria</label>
+          <select id="filter-category" class="filter-select">
+            <option value="">Todas</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Preço mínimo</label>
+          <input
+            type="number"
+            id="filter-price-min"
+            class="filter-input"
+            placeholder="R$ 0"
+            min="0"
+          />
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Preço máximo</label>
+          <input
+            type="number"
+            id="filter-price-max"
+            class="filter-input"
+            placeholder="R$ 9999"
+            min="0"
+          />
+        </div>
+
+        <button class="btn-apply-filter" id="btn-apply-filter">
+          <i class="fas fa-check"></i> Aplicar
+        </button>
+        <button class="btn-clear-filter" id="btn-clear-filter">
+          <i class="fas fa-trash"></i> Limpar filtros
+        </button>
+      </div>
+    </div>
+
+    <main class="display-container" id="display-container">
+      <div class="products-grid" id="products-grid">
+        <div class="loading-state">
+          <i class="fas fa-spinner fa-spin"></i>
+          <p>Carregando produtos...</p>
+        </div>
+      </div>
+      <nav class="pagination" id="pagination" aria-label="Paginação"></nav>
+    </main>
+
+    <script src="../src/javascript/catalog.js"></script>
+
+    <footer>
+      <p>&copy; 2026 MultiMarket. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

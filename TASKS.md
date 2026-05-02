@@ -49,40 +49,6 @@ Produtos Relacionados
 
 ---
 
-### 📦 Vitrine (Base do projeto)
-
-* [ ] GET /products (listar produtos)
-* [ ] Renderizar cards (imagem, título, preço, categoria)
-* [ ] Loading state
-* [ ] Empty state
-
----
-
-### 📂 Categorias
-
-* [ ] Tela categorias
-* [ ] GET /categories
-* [ ] Renderizar menu de categorias
-* [ ] Filtro por categoria (sem reload)
-
----
-
-### 📄 Paginação
-
-* [ ] Implementar offset/limit
-* [ ] Botão "Próxima"
-* [ ] Botão "Anterior"
-
----
-
-### 🔎 Busca e Filtros
-
-* [ ] Busca por título
-* [ ] Filtro por preço (min/max)
-* [ ] Combinar filtros
-
----
-
 ### 📄 Detalhe do Produto
 
 * [ ] GET /products/:id
@@ -122,13 +88,6 @@ Produtos Relacionados
 
 ---
 
-### 📱 Responsividade
-
-* [ ] Layout mobile
-* [ ] Layout desktop
-
----
-
 ### 🚀 Entrega
 
 * [ ] Deploy (Vercel/GitHub Pages)
@@ -148,7 +107,14 @@ Produtos Relacionados
 
 ## 🟩 DONE (Concluído)
 
-*(Mover tarefas finalizadas pra cá)*
+### 📂 Categorias
+
+* [X] GET /products (listar produtos)
+* [X] Renderizar cards (imagem, título, preço, categoria)
+* [X] Renderizar menu de categorias
+* [X] Filtro por categoria (sem reload)
+
+---
 
 ### 🧱 Setup Inicial
 
@@ -157,17 +123,37 @@ Produtos Relacionados
 * [X] Definir padrão de commits
 * [X] Criar layout base (header, main, footer)
 
-### 🔐 Autenticação
+---
 
-* [x] Login
-* [x] Salvar token (localStorage)
-* [x] GET /auth/profile
-* [x] Logout
 
-### 👤 Usuários
+### 📦 Vitrine (Base do projeto)
 
-* [x] Cadastro de usuário
-* [x] Verificar e-mail disponível
+* [X] GET /products (listar produtos)
+* [X] Renderizar cards (imagem, título, preço, categoria)
+* [X] Loading state
+* [X] Empty state
+
+---
+
+### 📄 Paginação
+
+* [X] Implementar offset/limit
+* [X] Botão "Próxima"
+* [X] Botão "Anterior"
+
+---
+
+### 🔎 Busca e Filtros
+
+* [X] Busca por título
+* [X] Filtro por preço (min/max)
+* [X] Combinar filtros
+
+
+### 📱 Responsividade
+
+* [X] Layout mobile
+* [X] Layout desktop
 
 ---
 
